@@ -1,0 +1,256 @@
+:root{
+  --gray:rgb(251, 247, 247);
+  --gray-for-border: rgb(115, 114, 114);
+  --light-gray:#EFEFEF;
+  --white: white;
+  --light-blue: #0095f6;
+  --blue: #0057a3;
+  --black: black;
+  --font2: 'Heebo';
+}
+
+
+.all-top{
+    display: flex;
+    flex-direction: row;
+    padding-left: 320px;
+    padding-right: 300px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+
+  .all{
+    display:flex;
+    flex-direction: column;
+    background-color: var(--gray);
+  }
+
+  .right-side{
+    width: 400px;
+    height:100%;
+  }
+
+  .left{
+    display: flex;
+    flex-direction: column;
+    margin-left:30px;
+    padding-top: 15px;
+  }
+  
+  .left-top{
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid var(--gray-for-border);
+    text-align: center;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    background-color: var(--white);
+  }
+
+
+  .all-bottom{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left-bottom{
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid var(--gray-for-border);
+    text-align: center;
+    margin-top: 10px;
+    background-color: var(--white)
+  }
+
+  .left-bottom2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top:5px;
+  }
+
+  .left-bottom-button{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+  }
+
+  .apple-button{
+    width:100px;
+    height:100%;
+  }
+
+  .google-button{
+    width:100px;
+    height:100%;
+  }
+
+
+  .button{
+    margin: 4px;
+    width:250px;
+    height: 39px;
+    font-size: 12px;
+    border-radius: 3px;
+    background-color: var(--light-gray);
+    size: none;
+    border: 4px;
+    border-color: var(--gray-for-border);
+  }
+
+  .or{
+    font-family: var(--font2);
+  }
+
+  .or::before,
+  .or::after{
+    display: inline-block;
+    content: "";
+    border-top: .1rem solid var(--black);
+    width:  8rem;
+    margin: 0 1rem;
+  }
+
+  .button2{
+    margin: 8px;
+    width:250px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--light-blue);
+    color: var(--white);
+    font-size: 15px;
+  }
+
+  .facebook-icon{
+    width:25px;
+    height: 25px;
+    padding-top: 10px;
+  }
+
+  .facebook-words{
+    color: var(--blue);
+    font-size: 13px;
+    text-decoration-line: none;
+    padding-top: 15px;
+    font-family:var(--font2);
+    padding-left: 5px;
+  }
+
+  .facebook-login{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .password{
+    padding-top: 15px;
+    text-decoration-line: none;
+    padding-top: 15px;
+    color: var(--black);
+    font-family:var(--font2);
+  }
+
+  .signUp{
+    text-decoration-line: none;
+    color: var(--light-blue);
+    font-family:var(--font2);
+    font-weight: bold;
+  }
+
+  .dont-have-an-account{
+    padding-top: 10px;
+    padding-bottom: 10px;
+   font-size: 13px;
+   font-family:var(--font2);
+   
+  }
+
+  .get-the-app{
+    padding-top: 6px;
+    font-family:var(--font2);
+    font-size: 12px;
+  }
+
+
+  .instagram{
+    width:300px;
+    height: 40%;
+  }
+
+  .apple-button{
+    width:130px;
+    height:100%;
+  }
+
+  .google-button{
+    width:130px;
+    height:100%;
+    margin-left: 10px;
+  }
+
+
+.buttom-links{
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--gray);
+  justify-content: center;
+}
+
+.buttom-links2{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 30px;
+  font-family:var(--font2);
+  font-size: 13px;
+  color: var(--gray-for-border);
+  padding-top: 20px;
+  background-color: var(--gray);
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.links{
+  font-family:var(--font2);
+  font-size: 13px;
+  text-align: center;
+  list-style-type: none;
+  color: var(--gray-for-border);
+  background-color: var(--gray);
+}
+
+.language{
+  background-color: var(--gray);
+  border: none;
+  color: var(--gray-for-border);
+  font-size: 13px;
+}
+
+@media only screen and (max-width:885px){
+  .right-side{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 425px){
+  .right-side{
+    display: none;
+  }
+
+  .left-top{
+   border: none;
+}
+
+ .left-bottom {
+  border: none;
+}
+
+.all{
+ background-color: var(--white);
+}
+
+}
